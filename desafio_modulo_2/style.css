@@ -165,10 +165,20 @@ iframe{
     margin-right: auto;
 }
 
-section#videos{
+div.videos{
     background-color: rgb(1, 31, 1);
     width: 100%;
-    border-left: 0px;
+    margin: 0px -10px 30px -10px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.videos > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 h2#caixa{
