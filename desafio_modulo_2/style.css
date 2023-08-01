@@ -152,6 +152,11 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+}
+
+img.pequena{
+    width: 50%;
 }
 
 iframe{
@@ -195,6 +200,11 @@ section#quadro > div:hover{
 
 section#quadro > p{
     padding: 2px 2px 2px 2px;
+}
+
+section > ul{
+    list-style-position: inside;
+    columns: 2;
 }
 
 footer{
