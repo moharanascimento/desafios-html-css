@@ -3,10 +3,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@700&display=swap');
 
-
+:root{
+    --verde-escuro: rgb(25,91,56);
+    --verde-medio:  rgb(31, 128, 76);
+    --verde-claro:  rgb(60,214,129);
+    --sombra:rgba(0, 0, 0, 0.377);
+}
 
 header{
-    background-image: linear-gradient(0deg, rgb(25,91,56), rgb(31, 128, 76), rgb(60,214,129));
+    background-image: linear-gradient(0deg, var(--verde-escuro), var(--verde-medio), var(--verde-claro));
     display: block;
     margin-top: -12px;
     margin-right: -12px;
@@ -19,12 +24,12 @@ header{
 
 header>h1{
     font-family: 'Victor Mono', monospace;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+    text-shadow: 2px 2px 2px var(--sombra);
 }
 header>h2{
     font-family: 'Victor Mono', monospace;
     color: rgba(255, 255, 255, 0.877);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+    text-shadow: 2px 2px 2px var(--sombra);
     font-size: 14px;
     display: block;
     margin-left: 25%;
@@ -37,13 +42,13 @@ header>h2#menus{
     padding-bottom: 8px;
     font-family: 'Times New Roman', Times, serif;
     color: #c7d8ce;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+    text-shadow: 2px 2px 2px var(--sombra);
 }
 
 div:hover{
     display: inline-block;
     color: rgb(127, 240, 127);
-    background-color:  rgb(31, 128, 76);
+    background-color:  var(--verde-medio);
 }
 
 div{
@@ -67,18 +72,18 @@ main{
     padding: 10px;
     margin-top: -20px;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.377);
+    box-shadow: 4px 4px 9px 0px var(--sombra);
 }
 
 a#link{
     text-decoration: none;
-    color: rgb(23, 91, 55);
+    color:var(--verde-escuro);
     background-color: rgb(141, 204, 141);
 }
 
 a#link_android{
     text-decoration: none;
-    color: rgb(23, 91, 55);
+    color: var(--verde-escuro);
 }
 
 a#link:hover{
@@ -86,7 +91,7 @@ a#link:hover{
 }
 
 strong{
-    color: rgb(23, 91, 55);
+    color: var(--verde-escuro);
 }
 
 @media screen and (min-width: 500px) {
@@ -128,13 +133,13 @@ strong{
 h3{
     font-family: 'IDroid', Times, serif;
     font-size: 2em;
-    color: rgb(25,91,56);
+    color: var(--verde-escuro);
 }
 
 h4{
     font-family: 'IDroid', Times, serif;
     font-size: 1em;
-    color: rgb(25,91,56);
+    color:var(--verde-escuro);
     background-image: linear-gradient(90deg, rgb(161, 207, 183), rgb(243, 245, 244));
 }
 
